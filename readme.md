@@ -12,7 +12,7 @@ X Journal: Protein (Puncta/Diffuse Signal) Colocalization Quantification
    ./Anaconda3-2023.03-1-Linux-x86_64.sh
    ```
 
-Install Python with Anaconda (there should be a default "base" environment, but a separate environment is recommended):
+2. Install Python with Anaconda (there should be a default "base" environment, but a separate environment is recommended):
 
 ```
 conda create -n coloc python=3.8
@@ -60,7 +60,7 @@ For single channel total intensity: (for the green channel; cells segmentation a
 python process_total_intensity.py --mode single_total
 ```
 
-For fraction of protein A (intensity) with protein B:
+For fraction of protein A (intensity) with protein B: (e.g. **Fraction of STING intensity on GM130**)
 
 (In the code, A is the "second channel", B is the "first channel"; cells segmentation are labeled in white)
 
@@ -68,7 +68,7 @@ For fraction of protein A (intensity) with protein B:
 python process_fraction_of_protein_A_with_protein_B.py --mode coloc_total
 ```
 
-For fraction of protein A (area) with protein B puncta:
+For fraction of protein A (area) with protein B puncta: (e.g. **Fraction of GM130 positive for STING**)
 
 (In the code, A is the "second channel", B is the "first channel"; cells segmentation are labeled in white)
 
@@ -91,4 +91,6 @@ If you find this toolbox helpful, please cite the following paper:
 ```
 To be added
 ```
+
+Any questions regarding reproduction or intermediate results, please contact Haoxiang Yang (yanghaoxiang7@gmail.com) and Jay Tan (jay.tan@pit.edu) while posting a github issue.
 
